@@ -1,3 +1,5 @@
+"use strict";
+
 const fullName = "Desiree Laleman";
 let age = 28;
 const birthday = "Feburary 19th";
@@ -59,7 +61,7 @@ while (hours > 0 && wage > 0) {
     console.log(
       `You worked ${hours} hours, with ${overTime} hours overtime. Your wage is ${wage} and hour, and is ${overPay} when clocking overtime. You have earned ${regularPay} with an additional ${overTimePay} dollars this week!. Your total income is $${totalPay}.`
     );
-    const millionDollarWeeks = Math.round(1000000000 / totalPay);
+    const millionDollarWeeks = Math.round(1000000 / totalPay);
     console.log(
       `It would take you ${millionDollarWeeks} weeks to make 1 Million Dollars if you work ${overTime} hours overtime consistently.`
     );
@@ -69,7 +71,7 @@ while (hours > 0 && wage > 0) {
     console.log(
       `You worked ${hours} hours this week, with a wage of ${wage} and hour. Earning you ${pay} dollars this week.`
     );
-    const millionDollarWeeks = Math.round(1000000000 / pay);
+    const millionDollarWeeks = Math.round(1000000 / pay);
     console.log(
       `It would take you ${millionDollarWeeks} weeks to make 1 Million Dollars.`
     );
